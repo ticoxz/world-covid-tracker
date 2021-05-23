@@ -4,6 +4,8 @@ import CountUp from 'react-countup'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 
+import '../style.css';
+
 
 
 const Cards = ({data}) => {
@@ -16,7 +18,7 @@ const Cards = ({data}) => {
                 <Row>
                     <Card>
                         <Card.Body>
-                            <Card.Title>Confirmed</Card.Title>
+                            <Card.Title className="confirmed">Confirmed</Card.Title>
                             <Card.Text>
                                 <CountUp 
                                     start={0}
@@ -30,7 +32,7 @@ const Cards = ({data}) => {
 
                     <Card>
                         <Card.Body>
-                            <Card.Title>Recovered</Card.Title>
+                            <Card.Title className="recovered">Recovered</Card.Title>
                             <Card.Text>
                                 <CountUp 
                                     start={0}
@@ -44,7 +46,7 @@ const Cards = ({data}) => {
 
                     <Card>
                         <Card.Body>
-                            <Card.Title>Deaths</Card.Title>
+                            <Card.Title className="deaths">Deaths</Card.Title>
                             <Card.Text>
                                 <CountUp 
                                     start={0}

@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import Form from 'react-bootstrap/Form';
 
+import '../style.css';
+
 const Paises = ({paisForm}) => {
     const [listaPaises, setListaPaises] = useState([]);
 
@@ -28,7 +30,7 @@ const Paises = ({paisForm}) => {
     return (
         <div>
             <Form.Group>
-                <Form.Label>Choose Countries</Form.Label>
+                <Form.Label className="choose">Choose Countries</Form.Label>
                 <Form.Control as='select' onChange={(e) => paisForm(e.target.value)}>
                     <option value="World">World</option>
                     {listaPaises.map((pais, i) => <option key={i} value={pais}>{pais}</option>)}
