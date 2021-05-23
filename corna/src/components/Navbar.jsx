@@ -9,7 +9,7 @@ const NavBar = () => {
         <div>
           <Navbar className='navBar'>
             <Navbar.Brand>
-                <h1>Covid World Tracker x Marcelo Miranda</h1>
+                <h1>Covid World Tracker</h1>
             </Navbar.Brand>
           </Navbar>
         </div>

@@ -10,8 +10,10 @@ import Col from 'react-bootstrap/Col';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+
 import Cards from './components/Cards';
+import Graficos from './components/Graficos';
+import axios from 'axios';
 
 
 
@@ -63,7 +65,7 @@ const App = () => {
                         <Paises paisForm={paisForm}/>
                     </Col>
                     <Col xl={8}>
-                        
+                       
                     </Col>
                     <Col xl={2}>
                         <Cards data={data}/>
